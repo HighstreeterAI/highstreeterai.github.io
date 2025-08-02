@@ -145,6 +145,39 @@
             border: 1px solid rgba(102,126,234,0.2);
         }
 
+        .navigation-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .back-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            background-size: 300% 300%;
+            animation: buttonGradient 4s ease infinite;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255,255,255,0.3);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        @keyframes buttonGradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .back-link:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            border-color: white;
+        }
+
         .footer {
             text-align: center;
             color: white;
@@ -321,6 +354,10 @@
                 <strong>App Version:</strong> 1.0.0<br>
                 <strong>GDPR Compliance Version:</strong> 1.0
             </p>
+        </div>
+
+        <div class="navigation-section">
+            <a href="index.html" class="back-link">← Back to Support Center</a>
         </div>
 
         <div class="footer">
